@@ -74,6 +74,16 @@ const Users = () => {
                   <Col>
                     <Button
                       onClick={() => {
+                        nav("/update-student/" + contact._id);
+                      }}
+                      variant="secondary"
+                    >
+                      ادیت کاربر
+                    </Button>
+                  </Col>
+                  <Col>
+                    <Button
+                      onClick={() => {
                         nav("/courses", {
                           state: {
                             firstName: contact.firstName,

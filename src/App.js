@@ -11,6 +11,7 @@ import AddCourse from "./Components/AddCourse";
 import UpdateCourse from "./Components/UpdateCourse";
 import { useEffect, useState } from "react";
 import ResetPass from "./Components/ResetPass";
+import UpdateUser from "./Components/UpdateUser";
 
 function App() {
   const loc = useLocation();
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" exact element={<LoginPage />} />
         <Route path="/times" element={<Times />} />
         <Route path="/add-student" element={<AddUserForm />} />
+        <Route path="/update-student/:id" element={<UpdateUser />} />
         <Route path="/courses" element={<CoursesList />} />
         <Route path="/add-course" element={<AddCourse />} />
         <Route path="/update-course" element={<UpdateCourse />} />
